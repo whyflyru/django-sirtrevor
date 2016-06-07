@@ -52,7 +52,6 @@ class SirTrevorWidget(forms.Textarea):
 
     class Media:
         js = [
-            'sirtrevor/components/jquery/jquery.min.js',
             'sirtrevor/components/underscore/underscore-min.js',
             'sirtrevor/components/Eventable/eventable.js',
             'sirtrevor/components/sir-trevor-js/sir-trevor.js',
