@@ -9,14 +9,13 @@ except ImportError:
 
 setup(
     name='django-sirtrevor',
-    version='0.3.0',
+    version='0.3.0wf',
     packages=['sirtrevor'],
     include_package_data=True,
     license='MIT License',
     description='A simple Django app that provides a model field and ' +
                 'corresponding widget based on the fantastic Sir Trevor ' +
                 'project',
-    long_description=open('README.rst', 'r').read(),
     url='https://github.com/philippbosch/django-sirtrevor/',
     author='Philipp Bosch',
     author_email='hello@pb.io',
