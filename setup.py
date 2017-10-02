@@ -9,7 +9,7 @@ except ImportError:
 
 setup(
     name='django-sirtrevor',
-    version='0.3.1wf',
+    version='0.3.2wf',
     packages=['sirtrevor'],
     include_package_data=True,
     license='MIT License',

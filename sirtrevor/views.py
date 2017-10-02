@@ -24,9 +24,6 @@ def attachment(request):
     form = AttachmentForm(request.POST, request.FILES)
     if form.is_valid():
         file_ = form.cleaned_data['attachment']
-        file_name, extension = os.path.splitext(file_.name)
-        safe_name = '{0}{1}'.format(slugify(file_name), extension)
-        name = os.path.join(settings.SIRTREVOR_UPLOAD_PATH, safe_name)
 
         data = {'type': file_.content_type}
 
@@ -44,6 +41,10 @@ def attachment(request):
                 data['dimensions'] = Image.open(file_).size
             except:
                 pass
+
+        file_name, extension = os.path.splitext(file_.name)
+        safe_name = '{0}{1}'.format(slugify(file_name), extension)
+        name = os.path.join(settings.SIRTREVOR_UPLOAD_PATH, safe_name)
 
         data['path'] = default_storage.save(name, file_)
         data['url'] = default_storage.url(data['path'])
