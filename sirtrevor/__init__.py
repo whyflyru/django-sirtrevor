@@ -1,6 +1,9 @@
+# vim:fileencoding=utf-8
 import json
-from django.template.loader import render_to_string
 import six
+from django.template.loader import render_to_string
+
+__version__ = '0.3.2+whyfly.2'
 
 
 class SirTrevorContent(six.text_type):
@@ -16,6 +19,7 @@ class SirTrevorContent(six.text_type):
 
 
 custom_blocks_registry = {}
+
 
 def register_block(block, name=None):
     if name is None:
