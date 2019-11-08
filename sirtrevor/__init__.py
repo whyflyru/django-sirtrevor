@@ -3,7 +3,7 @@ import json
 import six
 from django.template.loader import render_to_string
 
-__version__ = '__version__ = '1.0.0''
+__version__ = '1.0.0'
 
 
 class SirTrevorContent(six.text_type):
