@@ -2,7 +2,7 @@
 import os
 from setuptools import setup
 
-version = '0.3.2+whyfly.2'
+version = '0.3.2+whyfly.3'
 
 
 def get_packages(package):
